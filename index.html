@@ -4,127 +4,130 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NMIC 2026</title>
+
   <style>
-    html,
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      margin: 0;
+      margin: 10px;
       padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.28;
+      color: #222;
       background: #ffffff;
     }
 
-    body {
-      color: #303133;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 20px;
-      line-height: 1.34;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    .page {
-      margin: 0 10px;
+    .container {
+      width: 100%;
+      margin: 0 auto;
     }
 
     .banner {
-      display: block;
       width: 100%;
-      height: auto;
-      border: 0;
-      margin: 0 0 16px 0;
+      display: block;
+      margin: 0 0 22px 0;
     }
 
     h1 {
-      margin: 0 0 26px 0;
-      color: #000000;
-      font-size: 33px;
-      line-height: 1.15;
+      margin: 0 0 20px 0;
+      font-size: 24px;
+      line-height: 1.25;
       font-weight: 700;
-    }
-
-    .subtitle {
-      margin: 0 0 56px 0;
-      color: #000000;
-      font-size: 25px;
-      line-height: 1.2;
-      font-weight: 700;
+      color: #111;
     }
 
     h2 {
-      margin: 20px 0 16px 0;
-      color: #000000;
-      font-size: 24px;
-      line-height: 1.2;
+      margin: 0 0 44px 0;
+      font-size: 17px;
+      line-height: 1.25;
       font-weight: 700;
+      color: #111;
+    }
+
+    h3 {
+      margin: 20px 0 12px 0;
+      font-size: 17px;
+      line-height: 1.25;
+      font-weight: 700;
+      color: #111;
     }
 
     p {
-      margin: 0 0 18px 0;
+      margin: 0 0 12px 0;
       text-align: left;
     }
 
     a {
       color: #0000ee;
-      font-weight: 700;
       text-decoration: underline;
+      font-weight: 700;
     }
 
     ul {
-      margin: 0 0 18px 28px;
-      padding-left: 16px;
+      margin-top: 0;
+      margin-bottom: 13px;
+      padding-left: 34px;
     }
 
     ul ul {
-      margin: 3px 0 7px 22px;
-      padding-left: 14px;
+      margin-top: 2px;
+      margin-bottom: 0;
+      padding-left: 24px;
+      list-style-type: circle;
     }
 
     li {
-      margin: 2px 0;
+      margin: 1px 0;
     }
 
     table {
       width: 100%;
-      margin: 0 0 24px 0;
       border-collapse: collapse;
-      border-spacing: 0;
-      color: #606266;
-      font-size: 18px;
-      line-height: 1.32;
-      table-layout: fixed;
+      margin: 0 0 18px 0;
+      font-size: 12px;
+      color: #4b5563;
     }
 
     th,
     td {
-      padding: 13px 14px;
-      border-top: 1px solid #ebeef5;
       text-align: left;
-      vertical-align: top;
-      font-weight: 400;
+      padding: 13px 14px;
+      border-top: 1px solid #edf0f3;
+      vertical-align: middle;
     }
 
     th {
-      color: #909399;
       font-weight: 700;
+      color: #6b7280;
       background: #ffffff;
     }
 
     tbody tr:nth-child(even) {
-      background: #fafafa;
+      background: #f7f8fa;
     }
 
-    th:first-child,
-    td:first-child {
+    .dates-table td:first-child,
+    .people-table th:first-child,
+    .people-table td:first-child {
       width: 50%;
+    }
+
+    .section-gap {
+      margin-top: 18px;
     }
   </style>
 </head>
-<body>
-  <img class="banner" src="banner.jpg" alt="NMIC 2026 Workshop Banner" />
 
-  <div class="page">
+<body>
+  <div class="container">
+    <img class="banner" src="banner.jpg" alt="NMIC 2026 Banner" />
+
     <h1>The 7th International Workshop on Network Meets Intelligent Computations (NMIC) 2026</h1>
 
-    <div class="subtitle">In conjunction with IEEE MASS 2026, on 21-23 October 2026</div>
+    <h2>In conjunction with IEEE MASS 2026, on 21-23 October 2026</h2>
 
     <p>
       The new computation technologies, such as LLMs and AI agents, big data analytics, modern machine learning technology,
@@ -141,8 +144,8 @@
       The ultimate goals for networking researches include intelligence, trust, and efficiency, which can be enhanced by or
       benefit for the intelligent computations. There are many open challenges for the emerging network concepts to meet the
       intelligent computations: what computations should be embedded; which node should be enforced with the computation; how
-      can the computations, such as big data analytics, security, AI, machine learning, blockchain, be seamlessly embedded into
-      the network and enable it to be efficient, trustworthy and accountable; how to fast locate the required and suitable
+      can the computations, such as big data analytics, security, AI, machine learning, blockchain, be seamlessly embedded
+      into the network and enable it to be efficient, trustworthy and accountable; how to fast locate the required and suitable
       computation nodes; how to efficiently transfer data through series of computation nodes; how to efficiently collect and
       process the big networking data; how to design networking architectures and protocols to easily support the efficient
       and diverse computations; how to achieve ultra-low latency communications with distributed computations; and how to
@@ -158,7 +161,8 @@
     </p>
 
     <ul>
-      <li>Intelligent Computation for Networking
+      <li>
+        Intelligent Computation for Networking
         <ul>
           <li>AI for networking</li>
           <li>Networking architecture and protocols for integrating caching, computation, and communications</li>
@@ -167,7 +171,8 @@
           <li>In-network data computations for network measurement and management</li>
         </ul>
       </li>
-      <li>Networking and Distributed Computing for Intelligent Applications
+      <li>
+        Networking and Distributed Computing for Intelligent Applications
         <ul>
           <li>Networking for AI</li>
           <li>In-network computation for future networks, inter-data center networking and 6G</li>
@@ -180,7 +185,8 @@
           <li>Big data networking in healthcare, V2V, smart cities, industry and other applications</li>
         </ul>
       </li>
-      <li>Networked Intelligent Applications
+      <li>
+        Networked Intelligent Applications
         <ul>
           <li>AI Agents and LLMs driven Intelligent Applications</li>
           <li>Cloud/Edge based Intelligent Applications</li>
@@ -193,38 +199,41 @@
       </li>
     </ul>
 
-    <h2>Submission Guidelines:</h2>
+    <h3>Submission Guidelines:</h3>
+
     <p>
       All submissions should follow the
-      <a href="https://www.ieee.org/conferences/publishing/templates.html">IEEE 8.5&quot; x 11&quot; Two-Column Format</a>.
+      <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">IEEE 8.5″ x 11″ Two-Column Format</a>.
       Each submission can have up to 6 pages. Authors of accepted papers are expected to present their papers at the workshop.
-      All the papers are submitted via <a href="https://edas.info/">EDAS</a>.
+      All the papers are submitted via <a href="https://edas.info/" target="_blank">EDAS</a>.
     </p>
 
-    <h2>Important Dates:</h2>
-    <table aria-label="Important Dates">
+    <h3>Important Dates:</h3>
+
+    <table class="dates-table">
       <tbody>
         <tr>
           <td>Submission deadline</td>
-          <td>Aug. 10, 2026</td>
+          <td>10 August, 2026</td>
         </tr>
         <tr>
           <td>Acceptance notification</td>
-          <td>Sep. 10, 2026</td>
+          <td>10 September, 2026</td>
         </tr>
         <tr>
           <td>Camera-ready of accepted papers</td>
-          <td>Sep. 20, 2026</td>
+          <td>20 September, 2026</td>
         </tr>
         <tr>
           <td>Conference and workshops</td>
-          <td>Oct. 21-23, 2026</td>
+          <td>21-23 October, 2026</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>Workshop Co-Chairs</h2>
-    <table aria-label="Workshop Co-Chairs">
+    <h3>TPC Co-Chairs</h3>
+
+    <table class="people-table">
       <thead>
         <tr>
           <th>Chair Name</th>
@@ -234,91 +243,22 @@
       <tbody>
         <tr>
           <td>Lei Yang</td>
-          <td>School of Software Engineering, South China University of Technology, China<br />Email: sely@scut.edu.cn</td>
+          <td>South China University of Technology, China</td>
         </tr>
         <tr>
           <td>Jiaxing Shen</td>
-          <td>School of Data Science, Lingnan University, Hong Kong, China<br />Email: jiaxingshen@ln.edu.hk</td>
+          <td>Lingnan University, Hong Kong, China</td>
         </tr>
         <tr>
           <td>Xiaobo Zhou</td>
-          <td>College of Intelligence and Computing, Tianjin University, China<br />Email: xiaobo.zhou@tju.edu.cn</td>
+          <td>Tianjin University, China</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>Short Biography of Organizers:</h2>
-    <p>
-      <strong>Lei Yang</strong> (Member, IEEE) received B.S. degree in electronic engineering from Wuhan University in 2007,
-      M.S. degree in computer science from Institute of Computing Technology, Chinese Academy of Sciences in 2010, and the
-      PhD degree in computer science on May, 2014. He is a Professor at School of Software Engineering, South China University
-      of Technology (SCUT). His research interests are cloud and edge computing, distributed machine learning and Internet of
-      Things. He has published over 70 papers in major international journals and conference proceedings including IEEE TMC,
-      IEEE TC, IEEE TPDS, IEEE TSC, IEEE TCC, ACM TKDD and IEEE INFOCOM. He is directing several research and development
-      projects from both government and industry agencies such National Natural Science Foundation of China (NSFC), Guangdong
-      Basic and Applied Basic Research Foundation and Tencent. He has won 2018 Ministry of Education Higher Education
-      Outstanding Scientific Research Output Awards – Natural Science Award (Second Class), and 2020 IEEE TCCLD Research
-      Innovation Award (Team award).
-    </p>
-    <p>
-      <strong>Jiaxing Shen</strong> (Member, IEEE, Member, ACM) is an Assistant Professor with the Department of Computing and
-      Decision Sciences at Lingnan University. He received the B.E. degree in Software Engineering from Jilin University in
-      2014, and the Ph.D. degree in Computer Science from the Hong Kong Polytechnic University in 2019. He was a visiting
-      scholar at the Media Lab, Massachusetts Institute of Technology in 2017. His current research theme is Human Dynamics
-      which aims to understand human behavior and provide actionable insights via cross-disciplinary approaches. Under the
-      theme, his research interests include mobile computing, data mining, and IoT. His research has been published in
-      top-tier journals such as IEEE TMC, ACM TOIS, ACM IMWUT, and IEEE TKDE. He was awarded conference best paper twice
-      including one from IEEE INFOCOM 2020.
-    </p>
-    <p>
-      <strong>Xiaobo Zhou</strong> (coming soon).
-    </p>
+    <h3>TPC Members</h3>
 
-    <h2>Planned Format of the Workshop:</h2>
-    <p>
-      The workshop will be presented in the forms of technical sessions. As follows are the detailed plan.
-    </p>
-    <table aria-label="Workshop Format">
-      <tbody>
-        <tr>
-          <td>Duration of the workshop</td>
-          <td>Half-Day</td>
-        </tr>
-        <tr>
-          <td>Number of refereed papers</td>
-          <td>10-15</td>
-        </tr>
-        <tr>
-          <td>Hot Topic Sessions</td>
-          <td>NMIC - Technical Session 1<br />NMIC - Technical Session 2</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Tentative Schedule:</h2>
-    <table aria-label="Tentative Schedule">
-      <tbody>
-        <tr>
-          <td>08:30-08:40 am</td>
-          <td>NMIC - opening</td>
-        </tr>
-        <tr>
-          <td>08:40-10:00 am</td>
-          <td>NMIC - Technical Session 1</td>
-        </tr>
-        <tr>
-          <td>10:00-10:20 am</td>
-          <td>Coffee Break</td>
-        </tr>
-        <tr>
-          <td>10:20-11:40 am</td>
-          <td>NMIC - Technical Session 2</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>TPC Members</h2>
-    <table aria-label="TPC Members">
+    <table class="people-table">
       <thead>
         <tr>
           <th>Member Name</th>
